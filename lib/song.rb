@@ -1,10 +1,11 @@
 class Song 
   
+  attr_accessor :name, :artist, :genre
+  
    @@artists = []
    @@genres = []
    @@count = 0 
    
-  attr_accessor :name, :artist, :genre
    
   def initialize(name, artist, genre)
     @name = name
@@ -38,5 +39,23 @@ class Song
 # 	end
   
   def self.genre_count
+    genre_hash = {}
+    
+    #iterate over the @@genres array and
+    @@genres.each do |genre| 
+      
+      if genre_hash[genre]
+        genre_hash[genre] +=1 
+      else
+      end
+      
+    end
+    
+    #populate a hash with the key/value pairs
+    
+    #check to see if the hash already contains a key of a particular genre
+    
+    
+  
   end
 end
