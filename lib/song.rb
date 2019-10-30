@@ -41,21 +41,39 @@ class Song
   def self.genre_count
     genre_hash = {}
     
-    #iterate over the @@genres array and
+    #iterate over the @@genres array
     @@genres.each do |genre| 
       
+      #check to see if the hash already contains a key of a particular genre
       if genre_hash[genre]
         genre_hash[genre] +=1 
       else
+        #populate a hash with the key/value pairs
         genre_hash[genre] = 1
       end
       
     end
     
-    #populate a hash with the key/value pairs
+    #return the new hash with the new organized info
+  genre_hash
+  end
+  
+  def self.artist_count
+    artist_hash = {}
     
-    #check to see if the hash already contains a key of a particular genre
+    #iterate over the @@artists array
+    @@artists.each do |artist| 
+      
+      if genre_hash[genre]
+        genre_hash[genre] +=1 
+      else
+        #populate a hash with the key/value pairs
+        genre_hash[genre] = 1
+      end
+      
+    end
     
+    #return the new hash with the new organized info
   genre_hash
   end
   
