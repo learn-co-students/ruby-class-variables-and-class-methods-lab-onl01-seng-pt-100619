@@ -47,6 +47,7 @@ class Song
       if genre_hash[genre]
         genre_hash[genre] +=1 
       else
+        genre_hash[genre] = 1
       end
       
     end
@@ -55,7 +56,7 @@ class Song
     
     #check to see if the hash already contains a key of a particular genre
     
-    
-  
+  genre_hash
   end
+  
 end
